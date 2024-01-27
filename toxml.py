@@ -366,7 +366,7 @@ class build_xml_data():
         navwarnTypeGeneral.text = "Special Operations" # need to change
         navwarnTypeGeneral.set('code', '9')
         publicationTime = etree.SubElement(NAVWARNPreamble, '{' + S124 + '}publicationTime')
-        parse_time = datetime.strptime(self.res_dict["publictime"],"%H%M%SUTC")
+        parse_time = datetime.strptime(self.res_dict["publictime"],"%d%H%MUTC")
         publicationTime.text = self.res_dict["year"].strftime("%Y-") + self.res_dict["month"].strftime("%m-%d")+"T" + parse_time.strftime("%H:%M:%SZ")
 
         ## references
@@ -501,6 +501,6 @@ if __name__ == "__main__":
         input_list.append(aa)
 
 
-    print(input_list)
-    data_obj = build_xml_data(input_list)
-    print(data_obj.geojson)
+    # print(input_list)
+    # data_obj = build_xml_data(input_list)
+    # print(data_obj.geojson)

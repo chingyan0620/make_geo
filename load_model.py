@@ -68,11 +68,11 @@ if __name__ == "__main__":
     # cursor.fetchone()[0]
     res = ml_parser(cursor.fetchone()[0])
 
-    print(res.predict_res)
+    # print(res.predict_res)
     with open("./test_predict.txt" , 'w') as f:
         for i in res.predict_res:
             for j in i:
                 f.write(j + "\t")
             f.write("\n")
     res = toxml.build_xml_data(res.predict_res)
-    print(res.res_dict)
+    # print(res.res_dict)

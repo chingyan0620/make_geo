@@ -55,14 +55,14 @@ class Tool():
         value = value_list[0]
         value = float(value.replace("1234321","."))
         xs,zs=math.modf(value)
-        print(xs)
-        print(zs)
+        # print(xs)
+        # print(zs)
 
         
         deg = value // 1
         m = str(round(xs * 60,4))
-        print(type(zs))
-        print(zs)
+        # print(type(zs))
+        # print(zs)
         result = ''
         return result
 
@@ -145,7 +145,7 @@ class Tool():
         geom.Transform(wgs84trans)
         geom = geom.Buffer(rad, quadsecs=4)
         geom.Transform(trans2wgs84)
-        print(geom)
+        # print(geom)
         return geom
 
     def count2id(counter):
