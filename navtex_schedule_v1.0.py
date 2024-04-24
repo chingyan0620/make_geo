@@ -134,19 +134,24 @@ for date in date_list:
             continue
 
         sql = """INSERT INTO navtex_content(NAVTEX_S124,CONTENT,PUBLICTIME,VER,visible) VALUES (%s, %s, %s,%s,%s)"""
-        # try:
-        #     a = datetime.strptime(ID_content[k][1],'%Y-%b-%d')
-        #     a = a.strftime('%Y-%m-%d')
-        #     # print(a)
+        try:
+            a = datetime.strptime(ID_content[k][1],'%Y-%b-%d')
+            a = a.strftime('%Y-%m-%d')
+            # print(a)
             
-        #     cursor.execute(sql, (k, ID_content[k][0],a,'0','1'))
-        # except:
-        #     error_text = error_text + "\n" + k + "\n "+  ID_content[k][0] + "\n" +ID_content[k][1] + "\n" 
+            cursor.execute(sql, (k, ID_content[k][0],a,'0','1'))
+        except:
+            error_text = error_text + "\n" + k + "\n "+  ID_content[k][0] + "\n" +ID_content[k][1] + "\n" 
+            print(error_text)
+            with open("error.txt","a") as f:
+                f.write(error_text)
+                f.write("\n")
         #     error_text = error_text +"--------------------------------------------------------"
         
-        a = datetime.strptime(ID_content[k][1],'%Y-%b-%d')
-        a = a.strftime('%Y-%m-%d')
-        cursor.execute(sql, (k, ID_content[k][0],a,'0','1'))
+        # a = datetime.strptime(ID_content[k][1],'%Y-%b-%d')
+        # a = a.strftime('%Y-%m-%d')
+        # cursor.execute(sql, (k, ID_content[k][0],a,'0','1'))
+            
         # error_text = error_text + "\n" + k + "\n "+  ID_content[k][0] + "\n" +ID_content[k][1] + "\n" 
         # error_text = error_text +"--------------------------------------------------------"
 
@@ -159,7 +164,7 @@ for date in date_list:
             sql = """INSERT INTO showtime(NAVTEX_S124, SHOW_TIME) VALUES (%s, %s)"""
             cursor.execute(sql, (i, j))
 
-conn.commit()
+        conn.commit()
 cursor.close()
 conn.close()
 driver.quit()

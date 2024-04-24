@@ -355,7 +355,9 @@ class build_xml_data():
         nameOfSeries = etree.SubElement(messageSeriesIdentifier, '{' + S124 + '}nameOfSeries')
         nameOfSeries.text = "NAVAREA XI"
         warningNumber = etree.SubElement(messageSeriesIdentifier, '{' + S124 + '}warningNumber')
-        warningNumber.text = "0"
+        warningNumber.text = str(idd)
+        print("----------- add warningNumber -----------")
+        print(idd)
         warningType = etree.SubElement(messageSeriesIdentifier, '{' + S124 + '}warningType')
         warningType.text = "Local No Warning" # need to know rule
         warningType.set('code', '6')
@@ -501,6 +503,7 @@ if __name__ == "__main__":
     cursor.execute(sql_str,"0034.24")
     raw_content = cursor.fetchone()[0]
     predict_res = load_model.ml_parser(raw_content)
+    print(raw_content)
     
     res = build_xml_data(predict_res.predict_res)
     print(res.res_dict)

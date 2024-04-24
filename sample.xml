@@ -1,0 +1,154 @@
+<S124:Dataset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:S124="http://www.iho.int/S124/1.0" xmlns:S100="http://www.iho.int/s100gml/1.0" xsi:schemaLocation="http://www.iho.int/S124/1.0 S-124_GML_Schemas_1.0.0.xsd" gml:id="TW.NAVTEX.0034.2024">
+  <gml:boundedBy>
+    <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+      <gml:lowerCorner>120.225390804612 25.8835836308953</gml:lowerCorner>
+      <gml:upperCorner>120.040722994646 25.7164153949616</gml:upperCorner>
+    </gml:Envelope>
+  </gml:boundedBy>
+  <DatasetIdentificationInformation xmlns="http://www.iho.int/s100gml/5.0">
+    <encodingSpecification>S-100 Part 10b</encodingSpecification>
+    <encodingSpecificationEdition>1.0</encodingSpecificationEdition>
+    <productIdentifier> </productIdentifier>
+    <productEdition>0</productEdition>
+    <applicationProfile></applicationProfile>
+    <datasetFileIdentifier>TAIWAN NAVTEX</datasetFileIdentifier>
+    <datasetTitle> </datasetTitle>
+    <datasetReferenceDate>2024-01-01</datasetReferenceDate>
+    <datasetLanguage>eng</datasetLanguage>
+    <datasetAbstract></datasetAbstract>
+    <datasetTopicCategory>imageryBaseMapsEarthCover</datasetTopicCategory>
+    <datasetPurpose>base</datasetPurpose>
+    <updateNumber>0</updateNumber>
+  </DatasetIdentificationInformation>
+  <S124:members>
+    <S124:NAVWARNPreamble gml:id="TW.NAVTEX.0034.2024.0">
+      <S124:affectedChartPublications>
+        <S124:chartAffected>
+          <S124:chartNumber/>
+          <S124:chartPlanNumber></S124:chartPlanNumber>
+          <S124:editionDate>2024-01-01</S124:editionDate>
+          <S124:lastNoticeDate>2024-01-01</S124:lastNoticeDate>
+        </S124:chartAffected>
+        <S124:chartPublicationIdentifier/>
+        <S124:internationalChartAffected/>
+        <S124:language>eng</S124:language>
+      </S124:affectedChartPublications>
+      <S124:generalArea>
+        <S124:locationName>
+          <S124:text>some text</S124:text>
+        </S124:locationName>
+      </S124:generalArea>
+      <S124:messageSeriesIdentifier>
+        <S124:agencyResponsibleForProduction/>
+        <S124:countryName>TWN</S124:countryName>
+        <S124:nameOfSeries>NAVAREA XI</S124:nameOfSeries>
+        <S124:warningNumber>0</S124:warningNumber>
+        <S124:warningType code="6">Local No Warning</S124:warningType>
+        <S124:year>2024</S124:year>
+      </S124:messageSeriesIdentifier>
+      <S124:intService>true</S124:intService>
+      <S124:navwarnTypeGeneral code="9">Special Operations</S124:navwarnTypeGeneral>
+      <S124:publicationTime>2024-01-01T02:30:00Z</S124:publicationTime>
+    </S124:NAVWARNPreamble>
+    <S124:References gml:id="TW.NAVTEX.0034.2024.1">
+      <S124:messageSeriesIdentifier>
+        <S124:agencyResponsibleForProduction/>
+        <S124:nameOfSeries/>
+        <S124:warningNumber>0</S124:warningNumber>
+        <S124:warningType code="2">Coastal Navigational Warning</S124:warningType>
+        <S124:year>2024</S124:year>
+      </S124:messageSeriesIdentifier>
+      <S124:noMessageOnHand>false</S124:noMessageOnHand>
+      <S124:referenceCategory code="2">In-Force</S124:referenceCategory>
+    </S124:References>
+    <S124:NAVWARNPart gml:id="TW.NAVTEX.0034.2024.2">
+      <S124:featureName>
+        <S124:name></S124:name>
+      </S124:featureName>
+      <S124:featureReference>
+        <S124:dateTimeRange>
+          <S124:dateTimeEnd>2023-12-30T09:30:47Z</S124:dateTimeEnd>
+          <S124:dateTimeStart>2023-12-31T09:30:47Z</S124:dateTimeStart>
+        </S124:dateTimeRange>
+      </S124:featureReference>
+      <S124:warningInformation>
+        <S124:information>
+          <S124:headline/>
+          <S124:language>eng</S124:language>
+          <S124:text/>
+        </S124:information>
+      </S124:warningInformation>
+      <S124:header/>
+      <S124:geometry>
+        <surfaceProperty xmlns="http://www.iho.int/s100gml/5.0">
+          <Surface gml:id="TW.NAVTEX.0034.2024.3">
+            <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                  <gml:LinearRing>
+                    <gml:pos>120.892344267651 25.8000976801507</gml:pos>
+                    <gml:pos>120.885345723677 25.7681023655277</gml:pos>
+                    <gml:pos>120.865363920736 25.7409653736943</gml:pos>
+                    <gml:pos>120.83544505862 25.7228136814843</gml:pos>
+                    <gml:pos>120.800139983772 25.7164063012011</gml:pos>
+                    <gml:pos>120.764813731773 25.7227168135037</gml:pos>
+                    <gml:pos>120.734834483893 25.7407862409275</gml:pos>
+                    <gml:pos>120.714762090364 25.7678680353725</gml:pos>
+                    <gml:pos>120.707656352582 25.7998436827663</gml:pos>
+                    <gml:pos>120.714608911913 25.8318471107425</gml:pos>
+                    <gml:pos>120.734571303964 25.8590043559498</gml:pos>
+                    <gml:pos>120.764508699682 25.8771765774399</gml:pos>
+                    <gml:pos>120.799859395994 25.8835927370994</gml:pos>
+                    <gml:pos>120.835231632783 25.8772741113925</gml:pos>
+                    <gml:pos>120.865230291408 25.8591844305421</gml:pos>
+                    <gml:pos>120.885284151189 25.832082106868</gml:pos>
+                    <gml:pos>120.892344267651 25.8000976801507</gml:pos>
+                  </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+            </gml:patches>
+          </Surface>
+        </surfaceProperty>
+      </S124:geometry>
+      <S124:geometry>
+        <surfaceProperty xmlns="http://www.iho.int/s100gml/5.0">
+          <Surface gml:id="TW.NAVTEX.0034.2024.4">
+            <gml:patches>
+              <gml:PolygonPatch>
+                <gml:exterior>
+                  <gml:LinearRing>
+                    <gml:pos>120.225390804612 25.8005211773761</gml:pos>
+                    <gml:pos>120.218571758304 25.7684965517729</gml:pos>
+                    <gml:pos>120.198743178895 25.7412704762413</gml:pos>
+                    <gml:pos>120.168928254264 25.7229835916321</gml:pos>
+                    <gml:pos>120.133662324841 25.7164153949616</gml:pos>
+                    <gml:pos>120.098304601536 25.7225637106538</gml:pos>
+                    <gml:pos>120.068227930519 25.7404940129108</gml:pos>
+                    <gml:pos>120.048006679863 25.7674808316893</gml:pos>
+                    <gml:pos>120.040722994646 25.7994202085125</gml:pos>
+                    <gml:pos>120.047495470491 25.831451832078</gml:pos>
+                    <gml:pos>120.067303184999 25.8586976885986</gml:pos>
+                    <gml:pos>120.097135172765 25.8770055498276</gml:pos>
+                    <gml:pos>120.132446098115 25.8835836308953</gml:pos>
+                    <gml:pos>120.167850392037 25.8774283171927</gml:pos>
+                    <gml:pos>120.197947927817 25.8594782338911</gml:pos>
+                    <gml:pos>120.218152115184 25.832470438541</gml:pos>
+                    <gml:pos>120.225390804612 25.8005211773761</gml:pos>
+                  </gml:LinearRing>
+                </gml:exterior>
+              </gml:PolygonPatch>
+            </gml:patches>
+          </Surface>
+        </surfaceProperty>
+      </S124:geometry>
+    </S124:NAVWARNPart>
+    <S124:TextPlacement xmlns:ns0="http://www.iho.int/s100gml/5.0" ns0:S100="http://www.iho.int/s100gml/1.0" gml:id="TW.NAVTEX.0034.2024.5">
+      <S124:text>text</S124:text>
+      <S124:textJustification code="1">Centred</S124:textJustification>
+      <S124:identifies/>
+      <S124:geometry xmlns="http://www.iho.int/s100gml/5.0">
+        <pointProperty/>
+      </S124:geometry>
+    </S124:TextPlacement>
+  </S124:members>
+</S124:Dataset>
